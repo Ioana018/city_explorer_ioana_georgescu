@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explorer</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- 1. Antet cu numele site-ului și meniu cu 3 legături interne -->
+    <header class="site-header">
+        <h1>City Explorer</h1>
+        <nav class="menu">
+            <a href="#destinatii">Destinații</a>
+            <a href="#planifica">Planifică</a>
+            <a href="#recomandari">Recomandări</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 2. Secțiunea Destinații (cel puțin 5 destinații în tag-uri article) -->
+        <section id="destinatii">
+            <h2>Destinații</h2>
+            <div class="cards">
+                <!-- Destinația evidențiată cu clasa featured -->
+                <article class="card featured">
+                    <h3>Lisabona</h3>
+                    <p><strong>Țara:</strong> Portugalia</p>
+                    <p>Orașul celor șapte coline, faimos pentru cartierele istorice, tramvaiele galbene și arhitectura deosebită.</p>
+                    <p><em>Durată recomandată: 4 zile</em></p>
+                </article>
+
+                <article class="card">
+                    <h3>Roma</h3>
+                    <p><strong>Țara:</strong> Italia</p>
+                    <p>O incursiune în istoria antică cu monumente emblematice precum Colosseumul și Fontana di Trevi.</p>
+                    <p><em>Durată recomandată: 5 zile</em></p>
+                </article>
+
+                <article class="card">
+                    <h3>Praga</h3>
+                    <p><strong>Țara:</strong> Cehia</p>
+                    <p>Cunoscută pentru centrul vechi medieval conservat remarcabil, Podul Carol și castelele de pe deal.</p>
+                    <p><em>Durată recomandată: 3 zile</em></p>
+                </article>
+
+                <article class="card">
+                    <h3>Barcelona</h3>
+                    <p><strong>Țara:</strong> Spania</p>
+                    <p>O metropolă vibrantă pe malul mării, renumită pentru capodoperele arhitecturale ale lui Antoni Gaudí.</p>
+                    <p><em>Durată recomandată: 4 zile</em></p>
+                </article>
+
+                <article class="card">
+                    <h3>Viena</h3>
+                    <p><strong>Țara:</strong> Austria</p>
+                    <p>Oraș imperial cu palate somptuoase, muzee de renume mondial și cafenele istorice elegante.</p>
+                    <p><em>Durată recomandată: 3 zile</em></p>
+                </article>
+            </div>
+        </section>
+
+        <!-- 3. Secțiunea Planifică (formular static cu legături for-id) -->
+        <section id="planifica">
+            <h2>Planifică</h2>
+            <form class="plan-form">
+                <label for="name">Nume</label>
+                <input id="name" name="name" type="text" placeholder="Numele tău complet" required>
+
+                <label for="destination">Destinație</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Alege...</option>
+                    <option value="Lisabona">Lisabona</option>
+                    <option value="Roma">Roma</option>
+                    <option value="Praga">Praga</option>
+                    <option value="Barcelona">Barcelona</option>
+                    <option value="Viena">Viena</option>
+                </select>
+
+                <label for="days">Număr de zile</label>
+                <input id="days" name="days" type="number" min="1" placeholder="Exemplu: 4" required>
+
+                <button type="submit">Planifică excursia</button>
+            </form>
+        </section>
+
+        <!-- 4. Secțiunea Recomandări (listă cu cel puțin trei sfaturi) -->
+        <section id="recomandari">
+            <h2>Recomandări</h2>
+            <ul class="tips-list">
+                <li>Rezervă biletele la muzee online și în avans pentru a evita cozile de la intrare.</li>
+                <li>Achiziționează abonamente locale de transport pe 24 sau 72 de ore pentru a economisi bani.</li>
+                <li>Mănâncă la localurile din cartierele rezidențiale pentru o experiență culinară autentică.</li>
+            </ul>
+        </section>
+    </main>
+
+    <!-- 5. Subsol cu numele autorului și anul -->
+    <footer class="site-footer">
+        <p>Proiect realizat de Georgescu Ioana, 2026</p>
+    </footer>
+
+</body>
+</html>
